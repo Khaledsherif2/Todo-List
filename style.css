@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #77e6d6, #9cb0e3);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* todo list */
+.todo .container {
+  text-align: center;
+  margin: 100px auto;
+  padding: 20px;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.todo .container h1 {
+  font-size: 50px;
+  color: white;
+}
+.todo .container .form {
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: 2px solid black;
+}
+.todo .container .form > input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+.todo .container .form > button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 60px;
+  max-width: 100%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #1b73d1b4;
+}
+@media (max-width: 768px) {
+  .todo .container {
+    width: 80%;
+  }
+  .todo .container .form > button {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+  }
+}
+.todo .container .tasks {
+  padding: 0 10px;
+}
+.todo .container .tasks .task {
+  display: flex;
+  width: 500%;
+  max-width: 100%;
+  align-items: center;
+  padding: 5px;
+}
+.todo .container .tasks .task .content {
+  width: calc(100% - 60px);
+  height: 40px;
+  border-right: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+}
+.todo .container .tasks .task .content .checkbox {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
+  background-color: #1b73d1b4;
+}
+.todo .container .tasks .task .delbtn {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius:0 5px 5px 0;
+  width: 60px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #d11b1bb4;
+}
+.todo .container .clear {
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 200px;
+  max-width: 100%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #da1010b4;
+}
